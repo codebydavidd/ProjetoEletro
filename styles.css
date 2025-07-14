@@ -129,8 +129,8 @@ body {
 .navigation {
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 100px;
+    position:relative;
+    top: 500px;
     width: 100%;
     z-index: 999;
     display: flex;
@@ -1068,8 +1068,32 @@ body {
     .nav-link {
         padding: 0.4rem 0.6rem;
         font-size: 0.8rem;
-    }
+
+    
+  .hero {
+    padding: 140px 0 60px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-primary {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
 }
+
+    }
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -1140,4 +1164,22 @@ body {
 
 .overlay.show {
     display: block;
+}
+
+.nav-menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.nav-menu::-webkit-scrollbar {
+    display: none; 
+}
+
+.btn-icon {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
