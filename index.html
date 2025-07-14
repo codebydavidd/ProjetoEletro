@@ -192,30 +192,8 @@
     </div>
 
     <!-- Chat Widget -->
-    <div class="chat-widget" id="chatWidget">
-        <div class="chat-header" onclick="toggleChat()">
-            <i class="fas fa-comments"></i>
-            <span>Chat Online</span>
-        </div>
-        <div class="chat-body" id="chatBody">
-            <div class="chat-messages" id="chatMessages">
-                <div class="message bot-message">
-                    <p>Olá! Como posso ajudá-lo hoje?</p>
-                </div>
-            </div>
-            <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Digite sua mensagem...">
-                <button onclick="sendMessage()">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-            <div class="chat-actions">
-                <button onclick="openWhatsApp()" class="btn-whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    Continuar no WhatsApp
-                </button>
-            </div>
-        </div>
+    <div class="chat-icon" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
     </div>
 
     <!-- Social Media -->
@@ -233,22 +211,55 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Eletro</h4>
-                    <p>Sua loja de eletrônicos de confiança</p>
+                    <h4><i class="fas fa-bolt"></i> Eletro</h4>
+                    <p>Sua loja de eletrônicos de confiança com os melhores preços e produtos de qualidade.</p>
+                    <div class="footer-newsletter">
+                        <p><strong>Receba nossas ofertas:</strong></p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Seu e-mail">
+                            <button type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Atendimento</h4>
-                    <p>Segunda a Sexta: 8h às 18h</p>
-                    <p>Sábado: 8h às 12h</p>
+                    <h4><i class="fas fa-clock"></i> Atendimento</h4>
+                    <p><i class="fas fa-calendar-week"></i> Segunda a Sexta: 8h às 18h</p>
+                    <p><i class="fas fa-calendar-day"></i> Sábado: 8h às 12h</p>
+                    <p><i class="fas fa-calendar-times"></i> Domingo: Fechado</p>
+                    <div class="footer-social">
+                        <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p>contato@eletro.com</p>
-                    <p>(11) 99999-9999</p>
+                    <h4><i class="fas fa-phone"></i> Contato</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contato@eletro.com">contato@eletro.com</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5511999999999">(11) 99999-9999</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP - Brasil</p>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-info-circle"></i> Informações</h4>
+                    <p><a href="#sobre">Sobre a Eletro</a></p>
+                    <p><a href="#politica">Política de Privacidade</a></p>
+                    <p><a href="#termos">Termos de Uso</a></p>
+                    <p><a href="#trocas">Trocas e Devoluções</a></p>
+                    <p><a href="#frete">Frete Grátis</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Eletro. Todos os direitos reservados.</p>
+                <p>&copy; 2024 Eletro - Sua Loja de Eletrônicos. Todos os direitos reservados. | CNPJ: 00.000.000/0001-00</p>
             </div>
         </div>
     </footer>

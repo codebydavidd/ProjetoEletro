@@ -612,54 +612,9 @@ function closeModal(modalId) {
 }
 
 // Chat functions
-function toggleChat() {
-    const chatBody = document.getElementById('chatBody');
-    chatBody.classList.toggle('open');
-}
-
-function sendMessage() {
-    const chatInput = document.getElementById('chatInput');
-    const message = chatInput.value.trim();
-    
-    if (message === '') return;
-    
-    const chatMessages = document.getElementById('chatMessages');
-    
-    // Add user message
-    chatMessages.innerHTML += `
-        <div class="message user-message">
-            <p>${message}</p>
-        </div>
-    `;
-    
-    chatInput.value = '';
-    
-    // Simulate bot response
-    setTimeout(() => {
-        const responses = [
-            'Obrigado pela sua mensagem! Em que posso ajudá-lo?',
-            'Estou aqui para ajudar. Qual produto você gostaria de saber mais?',
-            'Posso te ajudar com informações sobre nossos produtos. O que você procura?',
-            'Ótima pergunta! Vou te ajudar com isso.',
-            'Para um atendimento mais personalizado, que tal continuarmos no WhatsApp?'
-        ];
-        
-        const randomResponse = responses[Math.floor(Math.random() * responses.length)];
-        
-        chatMessages.innerHTML += `
-            <div class="message bot-message">
-                <p>${randomResponse}</p>
-            </div>
-        `;
-        
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }, 1000);
-    
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-}
 
 function openWhatsApp() {
-    const message = encodeURIComponent('Olá! Vim do site da Eletro e gostaria de mais informações sobre os produtos.');
+    const message = encodeURIComponent('Olá! Vim do site da Eletro e gostaria de atendimento. Podem me ajudar?');
     window.open(`https://api.whatsapp.com/send?phone=5511999999999&text=${message}`, '_blank');
 }
 
